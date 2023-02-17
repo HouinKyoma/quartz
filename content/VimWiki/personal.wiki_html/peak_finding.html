@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>peak_finding</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+a-i are numbers 
+position is peak iff b&gt;=a and b&gt;=c
+</p>
+
+<table>
+<tr>
+<th>
+a
+</th>
+<th>
+b
+</th>
+<th>
+c
+</th>
+<th>
+r
+</th>
+<th>
+&nbsp;
+</th>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+2
+</td>
+<td>
+1
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+
+<div id="problem"><h1 id="problem" class="header"><a href="#problem">problem</a></h1></div>
+<p>
+find if the peak exist
+</p>
+
+<div id="problem-straight_foward_algorithm"><h2 id="straight_foward_algorithm" class="header"><a href="#problem-straight_foward_algorithm">straight_foward_algorithm</a></h2></div>
+<ol>
+<li>
+start from left,yes it is that simple just compare the two adajcent next to it one by one.
+
+</ol>
+
+<div id="problem-divide and conquer algorithm"><h2 id="divide and conquer algorithm" class="header"><a href="#problem-divide and conquer algorithm">divide and conquer algorithm</a></h2></div>
+
+<table>
+<tr>
+<th>
+1
+</th>
+<th>
+2
+</th>
+<th>
+n/2
+</th>
+<th>
+&nbsp;
+</th>
+<th>
+n
+</th>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+
+<ol>
+<li>
+look at n/2 elements, worst case complexity theta(n)
+
+<li>
+if a[n/2]&lt;a[n/2-1], then only look at left half 
+
+<li>
+else if a[n/2]&lt;a[m/2+1] then only look at the right half
+
+<li>
+else n/2 is peak
+
+</ol>
+
+<div id="problem-divide and conquer algorithm-what is the complexity"><h3 id="what is the complexity" class="header"><a href="#problem-divide and conquer algorithm-what is the complexity">what is the complexity</a></h3></div>
+<p>
+	T(n)=T(n/2)+Θ(1)
+		the Θ(1) is the time it take to compare to its neighbors
+	T(n)=T(n/4)+Θ(1)+Θ(1)
+	...
+	the complexity is Θ(log n), since there is log n terms in the series.
+</p>
+	
+
+
+   
+
+
+<div id="problem-2D-version"><h2 id="2D-version" class="header"><a href="#problem-2D-version">2D-version</a></h2></div>
+
+
+
+
+<table>
+<tr>
+<th>
+&nbsp;
+</th>
+<th>
+c
+</th>
+<th>
+&nbsp;
+</th>
+<th>
+&nbsp;
+</th>
+</tr>
+<tr>
+<td>
+b
+</td>
+<td>
+a
+</td>
+<td>
+d
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+e
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+
+<p>
+a is a peak iff a &gt;= c, b ,d, e
+</p>
+<div id="problem-2D-version-solution"><h3 id="solution" class="header"><a href="#problem-2D-version-solution">solution</a></h3></div>
+
+<ul>
+<li>
+pick middle column j = m/2
+
+<li>
+find global max on column j at (i,j)
+
+<li>
+compare the horizontal adjacent blocks
+
+<li>
+pick the side that are larger than i,j
+
+<ul>
+<li>
+if neither side is larger, then i,j is a peak
+
+</ul>
+<li>
+solve the new problem with the remaining half
+
+<li>
+continue till you have single column left, find the global peak and done!
+
+</ul>
+
+
+<div id="problem-2D-version-complexity"><h3 id="complexity" class="header"><a href="#problem-2D-version-complexity">complexity</a></h3></div>
+<p>
+T(n,m) where n m are the rows and cols of the 2d array.
+T(n,m) = T(n,m/2) + Θ(n) &lt;-- the n is here is two find the global peak of the singler reamaining array
+	there is log(m) number of Θ(n), thus:
+T(n,m) = Θ(n log m)
+</p>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+## [[Pointers in C++|pointers]]
+## [[parameter passing in c++|parameter passing]]
+## [[return passing in c++|return passing]]
+## [[Reference Variables]]
+## [[Implict Special Functions]]
+[[c-style array and strings]]

@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "4d6e44f96d1c0978",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c44de08692ab840",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea6aaad09fa7a48d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stack and subroutine in AVR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9364cb12356a3a82",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "1ded9fc175bb4df3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.8"
+              }
+            }
+          },
+          {
+            "id": "07cf42eb8c69f84b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "a202b89abac3b52b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "6731206848d14f03",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "a23793723ed74f8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stack and subroutine in AVR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ecfac06e7d1184c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CONTROL SYSTEM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c9323f0a2ca5627",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laplace Transform.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0204e319a7dc4e34",
+    "type": "split",
+    "children": [
+      {
+        "id": "89da2515ba9cf4f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf23bd696c325f5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "c62fc83e5cb28599",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "laplace",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f44ea0bb5fde1f4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "852efc66e5c12e05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96edc0da1444ebe1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2aa0745333d60b37",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b25cdf4ece917ad1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "templates:Insert template": false
+    }
+  },
+  "active": "6731206848d14f03",
+  "lastOpenFiles": [
+    "Total Probability Theorem.md",
+    "Probabilities.md",
+    "chain rule in probability.md",
+    "Conditional Probablity.md",
+    "personal.wiki/chain rule.md",
+    "Independence in Probability.md",
+    "Laplace Transform.md",
+    "CONTROL SYSTEM.md",
+    "stack and subroutine in AVR.md",
+    "In Order Traversal.md"
+  ]
+}

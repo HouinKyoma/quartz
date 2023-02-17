@@ -1,0 +1,116 @@
+{
+  "main": {
+    "id": "4d6e44f96d1c0978",
+    "type": "split",
+    "children": [
+      {
+        "id": "c13be6633ad6961f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "parameter passing in c++.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "0150ae23800a1996",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "personal.wiki/const.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0204e319a7dc4e34",
+    "type": "split",
+    "children": [
+      {
+        "id": "89da2515ba9cf4f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf23bd696c325f5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c62fc83e5cb28599",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f44ea0bb5fde1f4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "852efc66e5c12e05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96edc0da1444ebe1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "parameter passing in c++.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c13be6633ad6961f",
+  "lastOpenFiles": [
+    "C++ Details.md",
+    "Pointers in C++.md",
+    "personal.wiki/C++PROGRAMMING.md",
+    "C++ Class.md",
+    "personal.wiki/const.md",
+    "Class Templates.md",
+    "Templates.md",
+    "`const`.md",
+    "Matrices.md",
+    "Function Object.md"
+  ]
+}

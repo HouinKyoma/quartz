@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>binary_search_tree</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="Binary Search Trees"><h1 id="Binary Search Trees" class="header"><a href="#Binary Search Trees">Binary Search Trees</a></h1></div>
+
+<div id="Binary Search Trees-why we need BST? The Airport Runway Problem"><h2 id="why we need BST? The Airport Runway Problem" class="header"><a href="#Binary Search Trees-why we need BST? The Airport Runway Problem">why we need BST? The Airport Runway Problem</a></h2></div>
+<ul>
+<li>
+airport has a single runway
+
+<li>
+you have reservation for future landings.
+
+<li>
+when plane lands, the event is removed from pending
+
+<li>
+reserve specify landing time T
+
+<li>
+add T to the set if no other landing time are scheduled witnin K time both way.
+
+<ul>
+<li>
+else don't schedule.
+
+</ul>
+</ul>
+
+<p>
+If we use sorted list to solve this problem:
+</p>
+<pre python>
+	init: R = []
+	req(t): if t&lt;now: return "error"
+	for i in range(len(R)):
+		if abs(t-R[i]) &lt; k: return "error"
+	R.append(t)
+	R=sorted(R)
+	land: t = R[0]
+	if (t != now) return error
+	R = R[1:]   #drop R[0] from R after the time has passed
+</pre>
+<div id="Binary Search Trees-why we need BST? The Airport Runway Problem-complexities"><h3 id="complexities" class="header"><a href="#Binary Search Trees-why we need BST? The Airport Runway Problem-complexities">complexities</a></h3></div>
+<ul>
+<li>
+sorted list
+
+<ul>
+<li>
+appending and sorting: Θ(n log n) 
+
+<li>
+insertion: Θ(n)
+
+</ul>
+<li>
+sorted array
+
+<ul>
+<li>
+insert by binary search: Θ(log n)
+
+<li>
+insertion required shifting: Θ(n)
+
+</ul>
+</ul>
+
+
+<p>
+We can see that the insertion is the main issue here, we need a fast insertion into sorted list
+</p>
+
+<div id="Binary Search Trees-BST Definition"><h2 id="BST Definition" class="header"><a href="#Binary Search Trees-BST Definition">BST Definition</a></h2></div>
+<ul>
+<li>
+each node x in the binary tree has a key key(x).
+
+<li>
+all nodes except root has a parent
+
+<li>
+nodes can have left and right child, which are pointers
+
+<li>
+for any node x for all nodes y in the left subtree of x, key(y)&lt;= key(x)
+
+<li>
+for all nodes y in the right subtree of x key(y) &gt;=  key(x)
+
+</ul>
+
+<div id="Binary Search Trees-operations"><h2 id="operations" class="header"><a href="#Binary Search Trees-operations">operations</a></h2></div>
+<ul>
+<li>
+comparable types
+
+</ul>
+
+
+
+<ul>
+<li>
+insert()
+
+</ul>
+
+
+<ul>
+<li>
+remove()
+	it is hardest to remove element like many other data structure,we need to consider 3 possibility:
+
+<ol>
+<li>
+when the element is a leaf
+		Simple! we just just change the pointer of its parent to NULL and delete the element,
+
+<li>
+when the element have one tree
+		Simple! We just change the pointer of its parent to point to its only next element.
+
+<li>
+when the element have two trees:
+		Tricky, we have two way of solving this
+
+<ol>
+<li>
+find the min of its left
+
+<li>
+find the max of its right
+
+</ol>
+</ol>
+</ul>
+
+<p>
+	example:
+</p>
+<blockquote>
+6                		 6
+/ \                     / \         
+2    8                  3  8
+/ \		---&gt;          / \
+1 	5                    1   5
+/	                    /
+3	                       4  
+\
+4
+</blockquote>
+						
+<p>
+		removing node 2, by finding the minimum of the right sub tree.
+</p>
+<ul>
+<li>
+search() 
+
+</ul>
+<p>
+all operations are O(h) where h is the height of BST
+</p>
+
+</body>
+</html>

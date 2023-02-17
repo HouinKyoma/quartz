@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>algorithmic_complexity</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="Big O notation"><h1 id="Big O notation" class="header"><a href="#Big O notation">Big O notation</a></h1></div>
+
+<p>
+Ω():The tight lower bound of the complexity, equal to &gt;=
+</p>
+
+<p>
+Θ():The complexity is equal to
+</p>
+
+<p>
+O():The tight upper bound of the complexity, &gt;=
+</p>
+<div id="Big O notation-rules"><h2 id="rules" class="header"><a href="#Big O notation-rules">rules</a></h2></div>
+<ol>
+<li>
+constant before the variable doesn't count
+
+<li>
+only the highest term counts
+
+<li>
+loop inside loop = n^2
+
+</ol>
+
+
+<div id="Big O notation-rules-factorial and logrithimc complexity"><h3 id="factorial and logrithimc complexity" class="header"><a href="#Big O notation-rules-factorial and logrithimc complexity">factorial and logrithimc complexity</a></h3></div>
+
+
+<pre python>
+def factorial(n):
+	if n == 1:
+		return 1
+	return n * factorial(n-1)
+
+
+</pre>
+
+<p>
+This function is recursive, and the complexity is Θ(n) because the function will excute n times depending on the size of n.
+</p>
+
+
+<div id="Big O notation-rules-factorial and logrithimc complexity-binary search and logrithimic"><h4 id="binary search and logrithimic" class="header"><a href="#Big O notation-rules-factorial and logrithimc complexity-binary search and logrithimic">binary search and logrithimic</a></h4></div>
+<p>
+<a href="binary_search.html">binary_search</a> is an example of logrithimc complexity,
+</p>
+
+<p>
+The number of element in our array for every call"
+0	 : n
+1	 : n/2
+2	 : n/4
+.
+.
+.
+i	 : n/2^i
+last : 1
+</p>
+
+<p>
+In every iteration we are cutting our array to half.
+when i = last:
+1 = n/2^i
+2^i=n
+i=log(n)
+</p>
+
+</body>
+</html>

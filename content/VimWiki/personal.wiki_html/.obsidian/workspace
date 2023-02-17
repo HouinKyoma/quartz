@@ -1,0 +1,72 @@
+{
+  "main": {
+    "id": "8b0d73e9bbc52029",
+    "type": "split",
+    "children": [
+      {
+        "id": "942e6904c1ce88d8",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ce3496eff78ff5bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "fae0a6af4a458c18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da19de467e13e81c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "72175cff2ae9e9c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7563236eb40be023",
+    "type": "split",
+    "children": [
+      {
+        "id": "e80f8e5ad550f306",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d820da41f1ea979",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": []
+}
